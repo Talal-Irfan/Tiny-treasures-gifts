@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whiteout Wonder</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: #fff;
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .product-image {
+    flex: 1 1 45%;
+  }
+
+  .product-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .product-details {
+    flex: 1 1 45%;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .product-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  .price {
+    font-size: 22px;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+
+  .quantity button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .add-to-cart {
+    background: #000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .add-to-cart:hover {
+    background: #333;
+  }
+
+  .wishlist {
+    margin-top: 15px;
+    background: #f4f4f4;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .sold-by {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .product-image, .product-details {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left: Product Image -->
+  <div class="product-image">
+    <img src="images/card-img3.jpg" alt="Whiteout Wonder">
+  </div>
+
+  <!-- Right: Product Details -->
+  <div class="product-details">
+    <div class="breadcrumb">Home / Gift Combinations / Whiteout Wonder</div>
+    <h1 class="product-title">Whiteout Wonder</h1>
+    <div class="price">Rs. 5,920</div>
+
+    <label>Delivery Time</label>
+    <select>
+      <option>Choose an option</option>
+      <option>Same Day</option>
+      <option>Next Day</option>
+    </select>
+
+    <label>Select City</label>
+    <select>
+      <option>Choose an option</option>
+      <option>Karachi</option>
+      <option>Lahore</option>
+      <option>Islamabad</option>
+    </select>
+
+    <div class="quantity">
+      <button>-</button>
+      <input type="text" value="1">
+      <button>+</button>
+    </div>
+
+    <button class="add-to-cart">Add to Cart</button><br>
+    <button class="wishlist">♡ Add to Wishlist</button>
+
+    <div class="sold-by">Sold By: The Gift Shop</div>
+  </div>
+</div>
+
+</body>
+</html>
