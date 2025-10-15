@@ -1,80 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>gifts website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-   <div
-    style="display: flex;flex-wrap: wrap; justify-content: space-evenly;align-items: start; background-color: #ffffff  ;height: 35px;">
-    <p><i class="fa-solid fa-phone" style="color: #FFD700;"></i> 0330-2807279</p>
-    <p><i class="fa-solid fa-envelope" style="color: #FFD700;"></i> thegiftshop@gmail.com</p>
-    <p><i class="fa-solid fa-globe" style="color: #FFD700;"></i> www.thegiftshop.pk</p>
-  </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+<style>
+    .navbar {
+      background: linear-gradient(to right, #fff7f9, #ffe4ec);
+      height: 80px;
+      box-shadow: 0 4px 20px rgba(128, 0, 32, 0.15);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+    }
+
+    /* 🌸 Brand */
+    .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: black !important;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-brand:hover {
+      color: #ffb6c1 !important;
+      transform: scale(1.05);
+    }
+
+    /* 🌸 Links */
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 0 10px;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #ffb6c1;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #800020 !important;
+    }
+
+    /* 🌸 Right-side Auth Links */
+    .auth-links .nav-link {
+      background: #800020;
+      color: white !important;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: 500;
+      margin-left: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .auth-links .nav-link:hover {
+      background: #ffb6c1;
+      color: #800020 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(128, 0, 32, 0.3);
+    }
+
+    /* 🌸 Navbar on Scroll */
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 30px rgba(128, 0, 32, 0.25);
+    }
+
+    /* 🌸 Responsive Tweaks */
+    @media (max-width: 992px) {
+      .auth-links {
+        position: static !important;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .auth-links .nav-link {
+        margin: 5px 0;
+        width: 120px;
+        text-align: center;
+      }
+    }
+    
+
+    /* 🌸 Dropdown Styling */
+  </style>
 
 
-  <nav style="background-color: #800020;" class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <!-- Brand on left -->
-      <a class="navbar-brand text-light" href="#"><img src="" alt=""> The Gift Shop</a>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"> Tiny Treasures</a>
 
-      <!-- Navbar toggler for mobile -->
+      <!-- Mobile toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Nav links centered -->
+
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              style="color: beige;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item ">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link" href="help.html">Help</a>
-          </li>
-        </ul>
-        <nav style="background-color: #800020; " class="navbar">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <div class="dropdown">
+            <button style="font-size: 17.5px;color: #000;" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Shop
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="watchpage.html">watches</a></li>
+              <li><a class="dropdown-item" href="customizeditems.html">Personalized Items </a></li>
+              <li><a class="dropdown-item" href="bestcombo.html">Best Combinations</a></li>
+            </ul>
           </div>
-        </nav>
-        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+        </ul>
+
+
+        <ul class="navbar-nav auth-links d-flex flex-row" style="position: absolute; right: 50px;">
           <li class="nav-item">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link" href="help.html">Sign in</a>
+            <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i> Sign in</a>
           </li>
           <li class="nav-item">
-            <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-              class="nav-link" href="help.html">Sign up</a>
+            <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign up</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Change navbar on scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+</body>
 </html>

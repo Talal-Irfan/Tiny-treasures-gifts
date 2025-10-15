@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Blog</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .blog-header {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .blog-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .blog-header p {
+    font-size: 1.1em;
+    color: #ffb6c1;
+  }
+
+  .blog-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .blog-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(128,0,32,0.3);
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .blog-content {
+    padding: 20px;
+  }
+
+  .blog-content h3 {
+    color: #800020;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+
+  .blog-content h3:hover {
+    color: #ffb6c1;
+    text-shadow: 0 0 8px rgba(255, 182, 193, 0.8);
+  }
+
+  .blog-content p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #800020;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+
+  .read-more:hover {
+    background-color: #ffb6c1;
+    color: #800020;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .blog-header h1 {
+      font-size: 2em;
+    }
+    .blog-card img {
+      height: 200px;
+    }
+  }
+   #top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(90deg, #ffffff);
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95em;
+    padding: 10px 20px;
+    letter-spacing: 0.4px;
+    box-shadow: 0 2px 10px rgba(128, 0, 32, 0.4);
+    position: relative;
+    z-index: 10;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: default;
+  }
+
+  .contact-item i {
+    color: #FFD700;
+    text-shadow: 0 0 6px rgba(255, 215, 0, 0.7);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .contact-item:hover i {
+    transform: scale(1.2);
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
+  }
+
+  .contact-item span {
+    transition: color 0.3s ease;
+  }
+
+  .contact-item:hover span {
+    color: #ffb6c1;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    #top-bar {
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+</style>    
+</head>
+<body>
+    <div id="top-bar">
+  <div class="contact-item">
+    <i class="fa-solid fa-phone"></i>
+    <span>0330-2807279</span>
+  </div>
+  <div class="contact-item">
+    <i class="fa-solid fa-envelope"></i>
+    <span>hello@tinytreasures.pk</span>
+  </div>
+  <div class="contact-item">
+    <i class="fa-solid fa-globe"></i>
+    <span>www.tinytreasures.pk</span>
+  </div>
+</div>
+
+<!-- Header Section -->
+<section class="blog-header">
+  <h1>Our Latest Blog Posts</h1>
+  <p>Discover stories, ideas, and inspiration from Giftify</p>
+</section>
+
+<!-- Blog Cards -->
+<section class="blog-container">
+  <div class="blog-card">
+    <img src="images/blogimg1.jpg" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>How much to spend on a birthday gift</h3>
+      <p>Now, none of this means that you are obliged to spend big bucks when it comes to gifts. Your budget is nobody’s business and entirely depends on how much money you’re able to spend. Just keep in mind that it’s the thought that counts; there’s nothing wrong with a small but meaningful gift.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+  <div class="blog-card">
+    <img src="" alt="Gift Ideas">
+    <div class="blog-content">
+      <h3>Top 10 Unique Gift Ideas for Any Occasion</h3>
+      <p>Looking for something special? Here are ten creative gift ideas that will surprise your loved ones and make every occasion unforgettable.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-card">
+    <img src="https://images.unsplash.com/photo-1607082350899-7e27d4c0f0e9" alt="Gift Wrapping">
+    <div class="blog-content">
+      <h3>Creative Ways to Wrap Your Gifts Beautifully</h3>
+      <p>Learn how to turn ordinary wrapping into art! From ribbons to rustic paper, we share simple ways to elevate your presentation.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+
+  <div class="blog-card">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Love Gifts">
+    <div class="blog-content">
+      <h3>How to Choose the Perfect Gift for Your Partner</h3>
+      <p>Finding the perfect present doesn’t have to be hard. Follow these expert tips to choose something that shows true thought and care.</p>
+      <a href="#" class="read-more">Read More</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
