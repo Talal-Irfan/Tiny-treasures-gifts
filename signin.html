@@ -2,354 +2,429 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>gifts website</title>
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiny Treasures | Sign In </title>
+  <link rel="icon" type="image/png" href="images/weblogo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
 
-        body {
+    body {
 
-            justify-content: center;
-            align-items: center;
+      justify-content: center;
+      align-items: center;
 
-            background-image: url(images/signinpage-bg.jpg);
-            background-size: cover;
-            background-position: center;
+      background-image: url(images/signinpage-bg2.jpg);
+      background-size: cover;
+      background-position: center;
 
-        }
+    }
 
-        .wrapper {
-            display: flex;
-            justify-self: center;
-            width: 500px;
-            background: transparent;
-            margin-top: 30px;
-            border: 3px solid rgba(35, 33, 33, 0.2);
-            backdrop-filter: blur(10px);
-            color: black;
-            border-radius: 12px;
-            padding: 20px 40px;
-        }
+    .wrapper {
+      display: flex;
+      justify-self: center;
+      width: 500px;
+      background: transparent;
+      margin: 100px;
+      border: 3px solid rgba(35, 33, 33, 0.2);
+      backdrop-filter: blur(10px);
+      color: black;
+      border-radius: 12px;
+      padding: 20px 40px;
+    }
 
-        .wrapper h1 {
-            font-size: 36px;
-            text-align: center;
-        }
+    .wrapper h1 {
+      font-size: 36px;
+      text-align: center;
+    }
 
-        .social-buttons {
-            margin-top: 15px;
-            min-width:420px;
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            margin-bottom: 15px;
-            padding: 5px;
+    .social-buttons {
+      margin-top: 15px;
+      min-width: 420px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 15px;
+      padding: 5px;
 
-        }
+    }
 
-        .social-buttons .btn {
-            width: 300px;
-            flex: 1;
-            padding: 5px 10px;
-            min-width: 140px;
-            margin-right: 8px;
-            font-size: 16px;
-            margin-bottom: 10px;
-            margin-top: 10px;
+    .social-buttons .btn {
+      width: 300px;
+      flex: 1;
+      padding: 5px 10px;
+      min-width: 140px;
+      margin-right: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-top: 10px;
 
-        }
+    }
 
 
-        /* Icon styles */
-        .btn .g-icon i {
-            font-weight: bold;
-            color: black;
-            font-size: 15px;
-        }
+    /* Icon styles */
+    .btn .g-icon i {
+      font-weight: bold;
+      color: black;
+      font-size: 15px;
+    }
 
-        .btn .apple-icon i {
-            margin-right: 4px;
-            font-size: 18px;
-            margin-top: 8px;
-        }
+    .btn .apple-icon i {
+      margin-right: 4px;
+      font-size: 18px;
+      margin-top: 8px;
+    }
 
-        /* Divider"OR" */
-        .divider {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin: 10px 0px;
-        }
+    /* Divider"OR" */
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 10px 0px;
+    }
 
-        .divider hr {
-            flex: 1;
-            border: none;
-            height: 1px;
-            background-color: black;
-        }
+    .divider hr {
+      flex: 1;
+      border: none;
+      height: 1px;
+      background-color: black;
+    }
 
-        .divider span {
-            margin: 0 10px;
-            color: black;
-            font-weight: bold;
-        }
+    .divider span {
+      margin: 0 10px;
+      color: black;
+      font-weight: bold;
+    }
 
-        .wrapper .input-box {
-            position: relative;
-            width: 100%;
-            height: 50px;
-            margin: 30px 0;
-        }
+    .wrapper .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 30px 0;
+    }
 
-        .input-box input {
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            border: none;
-            outline: none;
-            border: 2px solid rgba(255, 255, 255, .2);
-            border-radius: 40px;
-            font-size: 16px;
-            color: black;
-            padding: 20px 45px 20px 20px;
-        }
+    .input-box input {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: black;
+      padding: 20px 45px 20px 20px;
+    }
 
-        .input-box input::placeholder {
-            color: black;
-        }
+    .input-box input::placeholder {
+      color: black;
+    }
 
-        .input-box i {
-            position: absolute;
-            right: 20px;
-            top: 30%;
-            transform: translate(-50%);
-            font-size: 20px;
-        }
+    .input-box i {
+      position: absolute;
+      right: 20px;
+      top: 30%;
+      transform: translate(-50%);
+      font-size: 20px;
+    }
 
-        .wrapper .remember-forgot {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14.4px;
-            margin: -15px 0 15px;
-        }
+    .wrapper .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.4px;
+      margin: -15px 0 15px;
+    }
 
-        .remember-forgot label input {
-            accent-color: #fff;
-            margin-right: 3px;
-        }
+    .remember-forgot label input {
+      accent-color: #fff;
+      margin-right: 3px;
+    }
 
-        .remember-forgot a {
-            color: black;
-            text-decoration: none;
+    .remember-forgot a {
+      color: black;
+      text-decoration: none;
 
-        }
+    }
 
-        .remember-forgot a:hover {
-            text-decoration: underline;
-        }
+    .remember-forgot a:hover {
+      text-decoration: underline;
+    }
 
-        .wrapper .btn {
-            width: 100%;
-            height: 45px;
-            background: rgb(253, 249, 249);
-            border: none;
-            outline: none;
-            border-radius: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-            cursor: pointer;
-            font-size: 16px;
-            color: black;
-            font-weight: 600;
-        }
+    .wrapper .btn {
+      width: 100%;
+      height: 45px;
+      background: rgb(253, 249, 249);
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 16px;
+      color: black;
+      font-weight: 600;
+    }
 
-        .wrapper .btn:hover {
-            color: darkred;
-        }
+    .wrapper .btn:hover {
+      color: darkred;
+    }
 
-        .wrapper .reg-link {
-            font-size: 14.5px;
-            text-align: center;
-            margin: 20px 0 15px;
-            color: azure;
-        }
+    .wrapper .reg-link {
+      font-size: 14.5px;
+      text-align: center;
+      margin: 20px 0 15px;
+      color: azure;
+    }
 
-        .btn.reg-link p a {
-            color: azure;
-            text-decoration: none;
-            font-weight: 600;
+    .btn.reg-link p a {
+      color: azure;
+      text-decoration: none;
+      font-weight: 600;
 
-        }
+    }
 
-        .btn.reg-link p a:hover {
-            text-decoration: underline;
+    .btn.reg-link p a:hover {
+      text-decoration: underline;
 
-        }
+    }
 
-        .btn-log {
-            width: 100%;
-            height: 45px;
-            background: darkred;
-            border: none;
-            outline: none;
-            border-radius: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-            cursor: pointer;
-            font-size: 16px;
-            color: white;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
+    .btn-log {
+      width: 100%;
+      height: 45px;
+      background: #ffb6c1;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
 
-        .btn-log:hover {
-            background-color: rgba(205, 11, 11, 0.936);
+    .btn-log:hover {
+      background-color: rgba(255, 255, 255, 0.936);
 
-        }
+    }
 
-        .home-btn {
-            width: 100%;
-            height: 45px;
-            background: darkred;
-            border: none;
-            outline: none;
-            border-radius: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-            cursor: pointer;
-            font-size: 16px;
-            color: white;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
+    .home-btn {
+      width: 100%;
+      height: 45px;
+      background: darkred;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
 
-        .home-btn a {
-            text-decoration: none;
-            color: white;
-        }
+    .home-btn a {
+      text-decoration: none;
+      color: white;
+    }
 
-        .home-btn:hover {
-            background-color: rgba(205, 11, 11, 0.936);
+    .home-btn:hover {
+      background-color: rgba(205, 11, 11, 0.936);
 
-        }
-    </style>
+    }
+  </style>
 
-    <div id="top"></div>
-    <div
-        style="display: flex;flex-wrap: wrap; justify-content: space-evenly;align-items: start; background-color: #ffffff  ;height: 35px;">
-        <p><i class="fa-solid fa-phone" style="color: #FFD700;"></i> 0330-2807279</p>
-        <p><i class="fa-solid fa-envelope" style="color: #FFD700;"></i> tinytreasures@gmail.com</p>
-        <p><i class="fa-solid fa-globe" style="color: #FFD700;"></i> www.tinytreasuresshop.pk</p>
+
+
+
+  <!---------------------------navbar ------------------------>
+  <style>
+    .navbar {
+      background: linear-gradient(to right, #fff7f9, #ffe4ec);
+      height: 80px;
+      box-shadow: 0 4px 20px rgba(128, 0, 32, 0.15);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+    }
+
+    /* 🌸 Brand */
+    .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: black !important;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-brand:hover {
+      color: #ffb6c1 !important;
+      transform: scale(1.05);
+    }
+
+    /* 🌸 Links */
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 0 10px;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #ffb6c1;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #800020 !important;
+    }
+
+    /* 🌸 Right-side Auth Links */
+    .auth-links .nav-link {
+      background: #800020;
+      color: white !important;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: 500;
+      margin-left: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .auth-links .nav-link:hover {
+      background: #ffb6c1;
+      color: #800020 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(128, 0, 32, 0.3);
+    }
+
+    /* 🌸 Navbar on Scroll */
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 30px rgba(128, 0, 32, 0.25);
+    }
+
+    /* 🌸 Responsive Tweaks */
+    @media (max-width: 992px) {
+      .auth-links {
+        position: static !important;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .auth-links .nav-link {
+        margin: 5px 0;
+        width: 120px;
+        text-align: center;
+      }
+    }
+
+
+    /* 🌸 Dropdown Styling */
+  </style>
+
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html"> <img height="100px" src="images/weblogo.png" alt="">Tiny Treasures</a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+        </ul>
+
+
+        <ul class="navbar-nav auth-links d-flex flex-row" style="position: absolute; right: 50px;">
+          <li class="nav-item">
+            <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i> Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign up</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!---------------------------navbar ------------------------>
 
 
-    <nav style="background-color: #800020;height: 80px;" class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <!-- Brand on left -->
-            <a class="navbar-brand text-light" href="#"><img src="" alt=""> Tiny treasures</a>
+  <div class="wrapper">
+    <form action="">
+      <h1>Sign In</h1>
 
-            <!-- Navbar toggler for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- google,apple buttons -->
+      <div class="social-buttons">
+        <button type="button" class="btn black google">
+          <span class="g-icon"><i class='bx bxl-google'></i></span>Sign in with Google</button>
+        <button type="button" class="btn black apple">
+          <span class="A-icon"><i class='bx bxl-apple'></i>Sign in with Apple</span>
+        </button>
+      </div>
 
-            <!-- Nav links centered -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link" href="help.html">Help</a>
-                    </li>
-                </ul>
-                <nav style="background-color: #800020; " class="navbar">
-                    <div class="container-fluid">
-                        <form class="d-flex" role="search">
-                            <input style="width: 300px;" class="form-control me-2" type="search" placeholder="Search"
-                                aria-label="Search" />
-                            <button class="btn btn-outline-light" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link" href="signin.html">Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color: white;font-weight: 400;font-family: Arial, Helvetica, sans-serif;font-size: larger;"
-                            class="nav-link" href="signup.html">Sign up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <!-- divider -->
+      <div class="divider">
+        <hr><span>OR</span>
+        <hr>
+      </div>
 
-    <div class="wrapper">
-        <form action="">
-            <h1>Sign In</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Username" required>
+        <i class='bx bxs-user'></i>
+      </div>
 
-            <!-- google,apple buttons -->
-            <div class="social-buttons">
-                <button type="button" class="btn black google">
-                    <span class="g-icon"><i class='bx bxl-google'></i></span>Sign in with Google</button>
-                <button type="button" class="btn black apple">
-                    <span class="A-icon"><i class='bx bxl-apple'></i>Sign in with Apple</span>
-                </button>
-            </div>
-
-            <!-- divider -->
-            <div class="divider">
-                <hr><span>OR</span>
-                <hr>
-            </div>
-
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-                <i class='bx bxs-user'></i>
-            </div>
-
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-                <i class='bx bxs-lock-alt'></i>
-            </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
 
 
-            <div class="remember-forgot">
-                <label for=""><input type="checkbox">Rememer me</label>
-                <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn-log">Login</button>
-            <div class="reg-link">
-                <p>Don't have an account? <a href="signup.html">Register</a></p>
-            </div>
-        </form>
+      <div class="remember-forgot">
+        <label for=""><input type="checkbox">Rememer me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn-log">Login</button>
+      <div class="reg-link">
+        <p>Don't have an account? <a href="signup.html">Register</a></p>
+      </div>
+    </form>
 
-    </div>
+  </div>
 </body>
 
 </html>
