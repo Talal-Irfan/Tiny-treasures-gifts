@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>gifts website</title>
+  <title>Prada</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,154 +12,65 @@
 </head>
 
 <body>
-  <!---------------------------navbar ------------------------>
-  <style>
-    .navbar {
-      background: linear-gradient(to right, #fff7f9, #ffe4ec);
-      height: 80px;
-      box-shadow: 0 4px 20px rgba(128, 0, 32, 0.15);
-      backdrop-filter: blur(10px);
-      transition: all 0.4s ease;
-    }
+  <!----------------navbar---------------------->
+ <section>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html"> <img height="100px" src="images/weblogo.png" alt="">Tiny
+          Treasures</a>
 
-    /* 🌸 Brand */
-    .navbar-brand {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: black !important;
-      letter-spacing: 1px;
-      transition: 0.3s;
-      margin-left: -70px;
-    }
-
-    .navbar-brand:hover {
-      color: #ffb6c1 !important;
-      transform: scale(1.05);
-    }
-
-    /* 🌸 Links */
-    .navbar-nav .nav-link {
-      color: #000 !important;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin: 0 10px;
-      position: relative;
-      transition: 0.3s ease;
-    }
-
-    .navbar-nav .nav-link::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background-color: #ffb6c1;
-      transition: 0.3s ease;
-    }
-
-    .navbar-nav .nav-link:hover::after {
-      width: 100%;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #800020 !important;
-    }
-
-    /* 🌸 Right-side Auth Links */
-    .auth-links .nav-link {
-      background: #800020;
-      color: white !important;
-      padding: 6px 18px;
-      border-radius: 25px;
-      font-weight: 500;
-      margin-left: 10px;
-      transition: all 0.3s ease;
-    }
-
-    .auth-links .nav-link:hover {
-      background: #ffb6c1;
-      color: #800020 !important;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(128, 0, 32, 0.3);
-    }
-
-    /* 🌸 Navbar on Scroll */
-    .navbar.scrolled {
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 4px 30px rgba(128, 0, 32, 0.25);
-    }
-
-    /* 🌸 Responsive Tweaks */
-    @media (max-width: 992px) {
-      .auth-links {
-        position: static !important;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-      }
-
-      .auth-links .nav-link {
-        margin: 5px 0;
-        width: 120px;
-        text-align: center;
-      }
-    }
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-    /* 🌸 Dropdown Styling */
-  </style>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mx-auto" style="position: absolute; right: 400px;">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <div class="dropdown">
+              <button style="font-size: 17.5px;color: #000;" class="btn dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="watchpage.html">watches</a></li>
+                <li><a class="dropdown-item" href="customizeditems.html">Personalized Items </a></li>
+                <li><a class="dropdown-item" href="bestcombo.html">Best Combinations</a></li>
+                <li><a class="dropdown-item" href="kidstoys.html">Toys</a></li>
+              </ul>
+            </div>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+          </ul>
 
 
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <!-- Brand -->
-      <a class="navbar-brand" href="index.html"> <img height="100px" src="images/weblogo.png" alt="">Tiny Treasures</a>
-
-      <!-- Mobile toggle -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <div class="dropdown">
-            <button style="font-size: 17.5px;color: #000;" class="btn dropdown-toggle" type="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Shop
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="watchpage.html">watches</a></li>
-              <li><a class="dropdown-item" href="customizeditems.html">Personalized Items </a></li>
-              <li><a class="dropdown-item" href="bestcombo.html">Best Combinations</a></li>
-              <li><a class="dropdown-item" href="kidstoys.html">Toys</a></li>
-            </ul>
-          </div>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
-        </ul>
-
-
-        <ul class="navbar-nav auth-links d-flex flex-row" style="position: absolute; right: 50px;">
-          <li class="nav-item">
-            <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i> Sign in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign up</a>
-          </li>
-        </ul>
+          <ul class="navbar-nav auth-links d-flex flex-row" style="position: absolute; right: 120px;">
+            <li class="nav-item">
+              <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i> Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign up</a>
+            </li>
+          </ul>
+         <ul>
+          <li class="nav-item" style="list-style-type: none; position: absolute; right: 30px;font-size: 20px;top: 25px;">
+              <a class="nav-link" href="productppage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            <li class="nav-item" style="list-style-type: none; position: absolute; right: 70px;font-size: 20px;top: 25px;">
+              <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+         </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!----------------------navbar --------------------->
-</body>
+    </nav>
+  </section>
+  <!----------------navbar---------------------->
+
 <!----------------------- Footer------------------------->
 <style>
   * {

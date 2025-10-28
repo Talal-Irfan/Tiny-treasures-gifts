@@ -15,106 +15,6 @@
 <body>
   <!---------------------------navbar ------------------------>
   <section>
-    <style>
-      .navbar {
-        background: linear-gradient(to right, #fff7f9, #ffe4ec);
-        height: 80px;
-        box-shadow: 0 4px 20px rgba(128, 0, 32, 0.15);
-        backdrop-filter: blur(10px);
-        transition: all 0.4s ease;
-      }
-
-      /* 🌸 Brand */
-      .navbar-brand {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.7rem;
-        font-weight: 600;
-        color: black !important;
-        letter-spacing: 1px;
-        transition: 0.3s;
-        margin-left: -70px;
-      }
-
-      .navbar-brand:hover {
-        color: #ffb6c1 !important;
-        transform: scale(1.05);
-      }
-
-      /* 🌸 Links */
-      .navbar-nav .nav-link {
-        color: #000 !important;
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.05rem;
-        font-weight: 500;
-        margin: 0 10px;
-        position: relative;
-        transition: 0.3s ease;
-      }
-
-      .navbar-nav .nav-link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 2px;
-        background-color: #ffb6c1;
-        transition: 0.3s ease;
-      }
-
-      .navbar-nav .nav-link:hover::after {
-        width: 100%;
-      }
-
-      .navbar-nav .nav-link:hover {
-        color: #800020 !important;
-      }
-
-      /* 🌸 Right-side Auth Links */
-      .auth-links .nav-link {
-        background: #800020;
-        color: white !important;
-        padding: 6px 18px;
-        border-radius: 25px;
-        font-weight: 500;
-        margin-left: 10px;
-        transition: all 0.3s ease;
-      }
-
-      .auth-links .nav-link:hover {
-        background: #ffb6c1;
-        color: #800020 !important;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 10px rgba(128, 0, 32, 0.3);
-      }
-
-      /* 🌸 Navbar on Scroll */
-      .navbar.scrolled {
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 4px 30px rgba(128, 0, 32, 0.25);
-      }
-
-      /* 🌸 Responsive Tweaks */
-      @media (max-width: 992px) {
-        .auth-links {
-          position: static !important;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 15px;
-        }
-
-        .auth-links .nav-link {
-          margin: 5px 0;
-          width: 120px;
-          text-align: center;
-        }
-      }
-
-
-      /* 🌸 Dropdown Styling */
-    </style>
-
-
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <!-- Brand -->
@@ -160,10 +60,10 @@
           </ul>
          <ul>
           <li class="nav-item" style="list-style-type: none; position: absolute; right: 30px;font-size: 20px;top: 25px;">
-              <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="nav-link" href="productppage.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
-            <li class="nav-item" style="list-style-type: none; position: absolute; right: 70px;font-size: 20px;top: 24px;">
-              <i class="fa-solid fa-user"></i>
+            <li class="nav-item" style="list-style-type: none; position: absolute; right: 70px;font-size: 20px;top: 25px;">
+              <a class="nav-link" href="signin.html"><i class="fa-solid fa-user"></i></a>
             </li>
          </ul>
         </div>
